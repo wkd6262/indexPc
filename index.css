@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+body {
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: white;
+
+}
+
+.header {
+  display: flex;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  height: 10vh; width: 100%;
+  line-height: 10vh;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+.header h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 20%;
+}
+
+.header h2 {
+  position: relative;
+  top: -70%;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  
+}
+
+.header a.contact {
+  position: relative;
+  top: 30%; right: 1%;
+  border-radius: 50px;
+  width: 150px; height: 40px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.header > a.contact h2:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.header  a {
+  color: white;
+  font-weight: bold;
+}
+
+.header_nav {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+}
+
+.h_mainmenu {
+  color: white;
+  display: block;
+  min-width: 140px; max-width: 140px;
+  width: 100%;
+  transition: 0.5s;
+  font-size: 1.3em;
+}
+
+.h_mainmenu:hover {
+  background-color: #00c3a4;
+  transition: 0.5s;
+}
+
+.h_submenu li:hover{
+  background-color: white;
+}
+
+.h_submenu li:hover a {
+  color: black;
+}
+
+.h_submenu li {
+  background: #00c3a4;
+  height: 10vh;
+}
+
+.h_submenu {
+  transition: 0.8s;
+  overflow: hidden;
+  height: 0;
+  font-size: 1.1em;
+}
+
+.h_mainmenu p {
+  font-weight: lighter;
+}
+
+.header:hover .h_submenu{
+  background-color: transparent;
+  color: white;
+  height: 60vh;
+}
+
+/* header */
+
+@keyframes typing {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+  }
+  100%{
+    width: 0%;
+  }
+  
+}
+
+.main {
+  font-weight: bold;
+  font-size: 6rem;
+  padding: 20% 0;
+}
+
+.maintxt h1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 25%; left: 50%;
+  transform: translate(-50% ,-50%);
+  z-index: 1;
+}
+
+.maintxt h1::before {
+  content: "developers";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  color: white;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 5s steps(20) infinite;
+}
+/* typiung */
+
+.mainimg img {
+  width: 80%; height: 100%;
+}
+/* main */
+.nav {
+  font-size: 1.6rem;
+  position: fixed;
+  top: 400px; left: 96%;
+  display: flex;
+  flex-flow: column wrap;
+  color: white;
+  background-color: gray;
+  width: 15%; height: 28%;
+  transition: 0.5s;
+}
+.nav li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8% 9%;
+}
+
+.nav:hover {
+  position: fixed;
+  left: 85%;
+}
+/* nav */
+
+.featureBox {
+  height: 100vh;
+}
+
+/* main */
